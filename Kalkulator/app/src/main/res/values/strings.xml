@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kalkulator</string>
+    <string name="label_first_number">Angka pertama</string>
+    <string name="label_second_number">Angka kedua</string>
+    <string name="label_result">Hasil: %1$s</string>
+    <string name="label_result_field">Hasil</string>
+    <string name="action_clear">Clear</string>
+    <string name="error_invalid_number">Masukkan angka yang valid.</string>
+    <string name="error_divide_by_zero">Tidak bisa dibagi dengan nol.</string>
+    <string name="error_invalid_operator">Operator tidak valid.</string>
+</resources>
