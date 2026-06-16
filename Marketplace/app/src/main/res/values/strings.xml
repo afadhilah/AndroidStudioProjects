@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Skoola</string>
+    <string name="welcome_title">Selamat Datang di Skoola!</string>
+    <string name="welcome_subtitle">Marketplace #1 untuk siswa &amp; mahasiswa. Jual beli mudah, aman, dan terpercaya dalam sekolah.</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="forgot_password">Lupa Kata Sandi?</string>
+    <string name="search_hint">Cari produk, jasa, buku...</string>
+    <string name="home">Beranda</string>
+    <string name="search">Cari</string>
+    <string name="wishlist">Favorit</string>
+    <string name="cart">Keranjang</string>
+    <string name="profile">Profil</string>
+</resources>
