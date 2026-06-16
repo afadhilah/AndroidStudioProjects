@@ -4,44 +4,81 @@ Kumpulan project aplikasi Android untuk belajar dan praktik pengembangan aplikas
 
 ## Daftar Project
 
-### 1. **DiceRoller**
+### 1. **CatatanKeuanganPribadi (Artharum)**
+Aplikasi Android untuk mencatat dan mengelola keuangan pribadi dengan fitur transaksi, budget, dan statistik.
+- **Fitur**: Pencatatan income, expense, transfer; Dashboard ringkasan saldo, income, expense; Daftar transaksi filter by period, account, category, search; Budget per kategori & monitor usage; Statistik visualisasi pengeluaran; Multiple accounts (cash, bank, e-wallet).
+- **Tech Stack**: Kotlin, Clean Architecture + MVVM, Jetpack Compose, Room Database, Material 3, Gradle 8.13, AGP 8.11.2, Java 21.
+- **Folder**: `CatatanKeuanganPribadi/`
+- **Detail**: Lihat [CatatanKeuanganPribadi/README.md](CatatanKeuanganPribadi/README.md)
+
+### 2. **CoffeeBliss**
+Aplikasi Digital Membership toko kopi Coffee Bliss untuk mengelola loyalitas pelanggan, melacak poin otomatis, dan penukaran rewards.
+- **Fitur**: Registrasi member baru dengan validasi email real-time, Daftar member & pencarian, Digital Membership Card (ID unik `CB-XXXXX`, Tiering, sisa poin, QR Code generator), Kalkulasi poin otomatis (kelipatan Rp10.000 = 1 poin), Riwayat transaksi & log hadiah, Penukaran poin (Redeem Rewards).
+- **Tech Stack**: Kotlin, Jetpack Compose (Material 3), Room Database, MVVM, Navigation Compose, Custom QR Code Bitmap Generator (offline).
+- **Folder**: `CoffeeBliss/`
+- **Detail**: Lihat [CoffeeBliss/README.md](CoffeeBliss/README.md)
+
+### 3. **DiceRoller**
 Aplikasi pelempar dadu sederhana menggunakan Jetpack Compose.
 - **Fitur**: Simulasi lemparan dadu, tampilan hasil dadu
 - **Tech Stack**: Kotlin, Jetpack Compose, Material 3
 - **Folder**: `DiceRoller/`
 
-### 2. **HappyBirthDay**
+### 4. **HappyBirthDay**
 Aplikasi untuk menampilkan ucapan ulang tahun dengan desain minimalis.
 - **Fitur**: Ucapan ulang tahun interaktif, preview Compose
 - **Tech Stack**: Kotlin, Jetpack Compose, Material 3, AGP 8.11.2
 - **Folder**: `HappyBirthDay/`
 - **Detail**: Lihat [HappyBirthDay/README.md](HappyBirthDay/README.md)
 
-### 3. **Kalkulator**
+### 5. **Kalkulator**
 Aplikasi kalkulator dengan operasi dasar dan validasi input.
-- **Fitur**: 
-  - Operasi dasar: `+`, `-`, `*`, `/`
-  - Validasi input angka
-  - Proteksi pembagian dengan nol
-  - Dukungan desimal koma (`,`)
-  - UI aman saat keyboard muncul
+- **Fitur**: Operasi dasar (`+`, `-`, `*`, `/`), validasi input angka, proteksi pembagian dengan nol, dukungan desimal koma (`,`), UI aman saat keyboard muncul.
 - **Tech Stack**: Kotlin, Jetpack Compose, Material 3, AGP 8.11.2
 - **Folder**: `Kalkulator/`
 - **Detail**: Lihat [Kalkulator/README.md](Kalkulator/README.md)
 
-### 4. **Login**
+### 6. **Login**
 Aplikasi login dengan validasi form sederhana.
 - **Fitur**: Validasi email dan password
 - **Tech Stack**: Kotlin, Android UI
 - **Folder**: `Login/`
 
-### 5. **MyApplication**
+### 7. **LoginMVVM**
+Aplikasi login dan register menggunakan arsitektur MVVM dengan UI modern (glassmorphism/semi-transparan).
+- **Fitur**: Register (validasi minimal 4 karakter password, username unik), Login (validasi input, feedback sukses/kegagalan via Toast/banner), UI Modern (glassmorphism/semi-transparan, gradasi latar belakang), StateFlow.
+- **Tech Stack**: Kotlin, Jetpack Compose (Material 3), Room Database, MVVM + Repository Pattern, Coroutines & Flow.
+- **Folder**: `LoginMVVM/`
+- **Detail**: Lihat [LoginMVVM/README.md](LoginMVVM/README.md)
+
+### 8. **Marketplace (Skoola)**
+Platform marketplace digital mobile khusus untuk lingkungan sekolah dan kampus untuk memfasilitasi transaksi jual-beli barang bekas, penyewaan perlengkapan, dan jasa akademik.
+- **Fitur**: Autentikasi (OTP 6 digit), Home Screen (promotional banner, kategori dinamis, rekomendasi lokasi), Pencarian & filter produk, Detail produk (profil penjual, rating, ulasan), Keranjang belanja (cart), Manajemen alamat & kampus, Checkout & pembayaran terintegrasi (Bank, E-Wallet, COD, QRIS), Dashboard penjual & Unggah produk.
+- **Tech Stack**: Kotlin 2.0+, Clean Architecture + MVVM, Jetpack Compose (Material 3), Dagger Hilt, Room Database, Retrofit & OkHttp, Coroutines & Flow, Coil, Kotlinx Serialization.
+- **Folder**: `Marketplace/`
+- **Detail**: Lihat [Marketplace/README.md](Marketplace/README.md)
+
+### 9. **MyApplication**
 Aplikasi dasar template untuk memulai project baru.
 - **Fitur**: Template project Android dasar
 - **Tech Stack**: Kotlin
 - **Folder**: `MyApplication/`
 
-### 6. **tugas1**
+### 10. **NewsApp**
+Aplikasi berita modern untuk menampilkan berita terkini menggunakan REST API dari NewsAPI secara real-time.
+- **Fitur**: Integrasi API Berita Riil (NewsAPI), Antarmuka Premium (Slate Theme), Bottom Navigation (Home, Search, Saved), In-App WebView (membuka berita asli di dalam aplikasi).
+- **Tech Stack**: Kotlin, Jetpack Compose (Material 3), Retrofit & Gson, Coroutines & StateFlow, Coil, Navigation Compose.
+- **Folder**: `NewsApp/`
+- **Detail**: Lihat [NewsApp/README.md](NewsApp/README.md)
+
+### 11. **RegistrasiSiswa (Student Registration App)**
+Aplikasi pendaftaran siswa untuk mendemonstrasikan implementasi operasi CRUD secara lokal dengan Room Database.
+- **Fitur**: CRUD lengkap siswa (Create, Read, Update, Delete), Validasi input (nama & format email), UI Dinamis (badge inisial nama dengan warna pastel dinamis), Dukungan tema (Material 3 terang/gelap).
+- **Tech Stack**: Kotlin, Jetpack Compose (Material 3), Room Database, MVVM, Coroutines & Flow.
+- **Folder**: `RegistrasiSiswa/`
+- **Detail**: Lihat [RegistrasiSiswa/README.md](RegistrasiSiswa/README.md)
+
+### 12. **tugas1**
 Project tugas/assignment pertama.
 - **Folder**: `tugas1/`
 
@@ -121,9 +158,15 @@ ProjectName/
 ## Dokumentasi Tambahan
 
 Setiap project memiliki dokumentasi lengkap di folder masing-masing:
+- [CatatanKeuanganPribadi/README.md](CatatanKeuanganPribadi/README.md) - Pengelolaan keuangan pribadi (Artharum)
+- [CoffeeBliss/README.md](CoffeeBliss/README.md) - Digital Membership & Loyalitas pelanggan
 - [HappyBirthDay/README.md](HappyBirthDay/README.md) - Tutorial lengkap Jetpack Compose
 - [Kalkulator/README.md](Kalkulator/README.md) - Penjelasan logika kalkulator
-- Lihat folder `docs/` di setiap project untuk informasi lebih lanjut
+- [LoginMVVM/README.md](LoginMVVM/README.md) - Autentikasi dengan arsitektur MVVM & Room Database
+- [Marketplace/README.md](Marketplace/README.md) - Platform marketplace digital khusus (Skoola)
+- [NewsApp/README.md](NewsApp/README.md) - Integrasi NewsAPI & In-App WebView
+- [RegistrasiSiswa/README.md](RegistrasiSiswa/README.md) - CRUD Siswa dengan Room Database
+- Lihat folder `docs/` atau README masing-masing project untuk informasi lebih lanjut
 
 ## Tips Pembelajaran
 
